@@ -1,0 +1,71 @@
++-------------------+
+|      iPhone       |
++-------------------+
+| -reprodutorMusical: ReprodutorMusical |
+| -aparelhoTelefone: AparelhoTelefone   |
+| -navegadorWeb: NavegadorWeb           |
++-------------------+
+| +tocarMusica()      |
+| +pausarMusica()     |
+| +selecionarMusica() |
+| +fazerChamada()     |
+| +atenderChamada()   |
+| +iniciarCorreioVoz()|
+| +exibirPaginaWeb()  |
+| +adicionarNovaAba() |
+| +atualizarPagina()  |
++-------------------+
+
++---------------------+
+|  ReprodutorMusical  |
++---------------------+
+| -playlist: List<Musica>|
+| -musicaAtual: Musica|
++---------------------+
+| +tocar()            |
+| +pausar()           |
+| +selecionarMusica(Musica)|
++---------------------+
+
++---------------------+
+|  AparelhoTelefone   |
++---------------------+
+| -contatos: List<Contato>|
+| -chamadaAtual: Chamada|
++---------------------+
+| +fazerChamada(Contato)|
+| +atenderChamada()   |
+| +iniciarCorreioVoz()|
++---------------------+
+
++---------------------+
+|    NavegadorWeb     |
++---------------------+
+| -paginaAtual: String|
+| -abas: List<Aba>    |
++---------------------+
+| +exibirPagina(String)|
+| +adicionarNovaAba(String)|
+| +atualizarPagina()  |
++---------------------+
+
++---------------------+
+|       Musica        |
++---------------------+
+| -titulo: String     |
+| -artista: String    |
+| -duracao: int       |
++---------------------+
+
++---------------------+
+|      Contato        |
++---------------------+
+| -nome: String       |
+| -numeroTelefone: String|
++---------------------+
+
++---------------------+
+|        Aba          |
++---------------------+
+| -url: String        |
++---------------------+
